@@ -62,6 +62,7 @@ const RepositoryList = () => {
       data={repositories}
       renderItem={({ item }) => (
         <RepositoryItem
+          avatarUrl={item.ownerAvatarUrl}
           fullName={item.fullName}
           description={item.description}
           language={item.language}
